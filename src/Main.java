@@ -2,7 +2,27 @@
 public class Main {
     public static void main(String[] args) {
         //einlagern("Buch");
-        rabatt(true, 2000);
+        //rabatt(true, 2000);
+        Badestelle[] array = new Badestelle[3];
+        array[0] = new Badestelle(20);
+        array[1] = new Badestelle(24);
+        array[2] = new Badestelle(25);
+        warmwassertag(array);
+    }
+    public static void warmwassertag(Badestelle[] badestellen){
+        int z = 0;
+        int w = 1;
+        while(z < badestellen.length){
+            Badestelle b = badestellen[z];
+            z = z + 1;
+            if(b.wassertemperatur > 22){
+                w = w + 1;
+            }
+        }
+        if(2 * w > z){
+            System.out.println("Warmwassertag");
+        }
+
     }
     public static void rabatt(boolean stammkunde, double umsatz){
         int rabatt;
