@@ -3,11 +3,28 @@ public class Main {
     public static void main(String[] args) {
         //einlagern("Buch");
         //rabatt(true, 2000);
-        Badestelle[] array = new Badestelle[3];
-        array[0] = new Badestelle(20);
-        array[1] = new Badestelle(24);
-        array[2] = new Badestelle(25);
-        warmwassertag(array);
+        //Badestelle[] array = new Badestelle[3];
+        //array[0] = new Badestelle(20);
+        //array[1] = new Badestelle(24);
+        //array[2] = new Badestelle(25);
+        //warmwassertag(array);
+        abrechnungErstellen(5);
+
+    }
+    public static void abrechnungErstellen(double wert){
+        wert = wert * 0.38;
+        int zaehler = 1;
+
+        while(wert < 5){
+            if(wert < 5){
+                wert = wert + 1;
+            }else{
+                wert = wert - 0.5;
+            }
+            System.out.println(zaehler + ". Durchlauf - Wert = " + wert);
+            zaehler++;
+        }
+        System.out.println("Wert: " + wert);
     }
     public static void warmwassertag(Badestelle[] badestellen){
         int z = 0;
