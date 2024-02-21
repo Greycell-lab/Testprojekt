@@ -8,7 +8,7 @@ public class Main {
         //array[1] = new Badestelle(24);
         //array[2] = new Badestelle(25);
         //warmwassertag(array);
-        abrechnungErstellen(5);
+        //abrechnungErstellen(5);
 
     }
     public static void abrechnungErstellen(double wert){
